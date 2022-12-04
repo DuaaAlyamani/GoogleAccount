@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Google Account</string>
+    <string name="use_my_current_email_address_instant" ><a href ="">Use my current email address instant</a></string>
+    <string name="sign_in_instant"><a href ="">Sign in instant</a></string>
 </resources>

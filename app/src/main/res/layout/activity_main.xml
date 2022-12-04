@@ -89,11 +89,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Use my current email address instant"
+        android:text="@string/use_my_current_email_address_instant"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_name"
         android:id="@+id/hyperlink"
-        android:textColor="@color/design_default_color_primary"
 
         />
 
@@ -104,7 +103,6 @@
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="Password"
-        android:inputType="textPassword"
 
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hyperlink"
@@ -116,6 +114,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
+            android:inputType="textPassword"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -126,7 +125,6 @@
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="Confirm"
-        android:inputType="textPassword"
 
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
@@ -140,6 +138,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAllCaps="false"
+
+            android:inputType="textPassword"
             />
 
 
@@ -152,11 +152,14 @@
         android:text="show password"
         android:textAppearance="?android:textAppearanceMedium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirm" />
+        app:layout_constraintTop_toBottomOf="@+id/confirm"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="16dp"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign in instant"
+        android:text="@string/sign_in_instant"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/showPassword"
         android:id="@+id/activity_main_hyperlink"
